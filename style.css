@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*STYLE: */
+
+body{
+	background: rgb(11, 141, 33);
+	background: linear-gradient(180deg, rgb(0, 145, 65) 0%, rgb(0, 145, 65) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%); 
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+h2{
+	font-weight: 800;
+	font-size: 1.2rem;
+}
+
+h3{
+	font-size: 1rem;
+}
+
+.container{
+	height: 100dvh;
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+	position: relative;
+}
+
+.top{
+	margin-top: 20%;
+	width: 90%;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+	flex-direction: column;
+}
+
+.confirmation, .amount{
+	padding: 20px;
+	-webkit-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.23);
+	box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.23);
+	border-radius: 5px;
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
+	background-color: #ffffff;
+}
+
+.confirmation h2{
+	font-weight: 500;
+}
+
+.confirmation h3:first-of-type{
+	color: rgb(0, 143, 24);
+}
+
+.amount p{
+	color: grey;
+}
+
+.used-from{
+	-webkit-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.23);
+	box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.23);
+	display: flex;
+	border-radius: 5px;
+	padding: 20px;
+	justify-content: start;
+	align-items: center;
+	gap: 5px;
+	background-color: #ffffff;
+	font-size: 0.9rem;
+}
+
+.used-from img{
+	width: 30px;
+}
+
+.nav-buttons{
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+	flex-direction: column;	
+}
+
+#share{
+	background-color: rgb(45, 158, 250);
+	color: #ffffff;
+	font-size: 0.9rem;
+	padding: 15px;
+	font-weight: 600;
+	border-radius: 5px;
+	padding-right: 90px;
+	padding-left: 90px;
+	border: none;
+}
+
+.home{
+	color: rgb(45, 158, 250);
+}
